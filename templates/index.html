@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>{{Title}} - {{Tagline}}</title>
+		<link rel="stylesheet" href="{{mainStyle}}" />
+		<link rel="stylesheet" href="css/makeit.css" />
+		<link rel="stylesheet" href="css/bootstrap-responsive.css" />
+	</head>
+	<body>
+		<div class="jumbotron">
+			<h1 class='title'>{{Title}}</h1>
+			<h4 class='title'>{{Tagline}}</h2>
+		</div>
+		<div class="container">
+		<div class="row">
+			<div class="span3 bs-docs-sidebar">
+				<ul class="nav nav-list bs-docs-sidenav affix-top">
+					<li>Where to find us</li>
+					<li>
+						<a href="http://goo.gl/gDrPf">Google+</a>
+					</li>
+					<li>
+						<a href="http://goo.gl/3oSzI">Youtube</a>
+					</li>
+					<li>
+						<a href="http://goo.gl/OhgBF">Fab Lab Tulsa</a>
+					</li>
+					<li>
+						<a href="http://goo.gl/6bcDf">Mailing List</a>
+					</li>
+				</ul>
+				<ul class="nav nav-list bs-docs-sidenav">
+					<li>Our friends on the internet</li>
+					<li>
+						<a href="http://goo.gl/3p54V">Tulsa Web Devs</a>
+					</li>
+				</ul>
+			</div>
+			<div class="span9 subhead">
+				<section>
+					{{#posts}}
+					<div id="{{_id}}" class="post">
+						<a href="/?id={{_id}}"><H1>{{Title}}</H1></a>
+						<p>{{{Short}}}</p>
+					</div>
+					{{/posts}}
+				</section>
+			</div>
+		</div>
+		</div>
+		<div style="float:right;padding:50px"><iframe src="https://www.google.com/calendar/embed?title=Tulsa%20Open%20Source%20Hardware&amp;height=300&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=projectmakeit.com_v5jig22da6uldqnfpb1604ftqg%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FChicago" style=" border-width:0 " width="500" height="300" frameborder="0" scrolling="no"></iframe></div></div>
+	</body>
+</html>

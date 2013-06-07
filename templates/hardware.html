@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>{{Title}} - {{Tagline}}</title>
+		<link rel="stylesheet" href="{{mainStyle}}" />
+		<link rel="stylesheet" href="css/makeit.css" />
+		<link rel="stylesheet" href="css/bootstrap-responsive.css" />
+	</head>
+	<body>
+		<div class="jumbotron">
+			<h1 class='title'>{{Title}}</h1>
+			<h4 class='title'>{{Tagline}}</h2>
+		</div>
+		<div class="container">
+		<div class="row">
+			<div class="span3 bs-docs-sidebar">
+				<ul class="nav nav-list bs-docs-sidenav affix-top">
+					<li>
+						<a href="/about">About</a>
+					</li>
+					<li>
+						<a href="/hardware">Tulsa Open Source Hardware</a>
+					</li>
+					<li>
+						<a href="/web">Tulsa Web Devs</a>
+					</li>
+				</ul>
+			</div>
+			<div class="span9 subhead">
+				<section>
+					{{#posts}}
+					<div id="{{_id}}" class="post">
+						<a href="/?id={{_id}}"><H1>{{Title}}</H1></a>
+						<p>{{Short}}</p>
+					</div>
+					{{/posts}}
+				</section>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
