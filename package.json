@@ -1,6 +1,6 @@
 {
-  "name": "projectmakeit",
-  "version": "0.0.0",
+  "name": "tulsa-opensource-blog",
+  "version": "0.1.0",
   "description": "Blog Engine used on ProjectMakeIt",
   "main": "app.js",
   "dependencies": {
@@ -9,15 +9,11 @@
     "mongodb": "~1.3.8",
     "mustache": "~0.7.2"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TulsaOpenSourceHardware/tulsa-opensource-blog.git"
   },
-  "repository": "",
-  "engines": {
-    "node": "0.10.x",
-    "npm": "1.2.x"
-  },
-  "author": "",
+  "author": "Tulsa OpenSource Hardware Team",
   "license": "BSD"
 }
